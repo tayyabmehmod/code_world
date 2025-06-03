@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact - Code World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main contact-page">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Code World</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="course.html">Course</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type here">
+                <a href="#"><button class="btn">search</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or want to get in touch, feel free to send us a message.</p>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required /><br>
+                <input type="email" name="email" placeholder="Your Email" required /><br>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            let name = document.querySelector('input[name="name"]').value.trim();
+            let email = document.querySelector('input[name="email"]').value.trim();
+            let message = document.querySelector('textarea[name="message"]').value.trim();
+
+            if (name && email && message) {
+                alert("Form submitted");
+                 this.reset();
+            } else {
+                alert("Please fill in all fields.");
+            }
+        });
+    </script>
+</body>
+</html>

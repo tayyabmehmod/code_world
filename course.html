@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Courses - Code World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .course-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        .course-item:last-child {
+            border-bottom: none;
+        }
+
+        .course-item h3 {
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .course-item h3 a {
+            color: #0073e6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .course-item h3 a:hover {
+            color: #004a99;
+            text-decoration: underline;
+        }
+
+        .course-item p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Optional: style for the search bar */
+        .search {
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+
+        .srch {
+            padding: 8px 12px;
+            width: 60%;
+            max-width: 300px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            font-size: 1em;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #004a99;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Code World</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="course.html" class="active">Course</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type here">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Our Courses</h1>
+
+            <section class="course-item">
+                <h3><a href="python-course.html">Introduction to Python Programming</a></h3>
+                <p>This course covers the basics of Python, one of the most popular and versatile programming languages today. You'll learn syntax, data types, control structures, functions, and how to write simple programs. Great for beginners aiming to start a career in software development or data science.</p>
+            </section>
+
+            <section class="course-item">
+                <h3><a href="webdev-course.html">Web Development with HTML, CSS, and JavaScript</a></h3>
+                <p>Learn how to build modern, responsive websites using core web technologies. This course covers HTML5 for structure, CSS3 for styling, and JavaScript for interactive behavior. You’ll also explore web design principles and best practices to create user-friendly interfaces.</p>
+            </section>
+
+            <section class="course-item">
+                <h3><a href="java-course.html">Java Programming Fundamentals</a></h3>
+                <p>Java is a widely-used, object-oriented programming language. This course introduces you to Java basics such as variables, loops, classes, and exception handling. You'll also learn to build simple desktop applications and understand Java's role in enterprise and Android development.</p>
+            </section>
+
+            <section class="course-item">
+                <h3><a href="ds-algo-course.html">Data Structures and Algorithms</a></h3>
+                <p>Enhance your problem-solving skills with this course focused on data structures like arrays, linked lists, stacks, queues, trees, and graphs. You’ll also learn key algorithms for sorting, searching, and optimization, which are critical for technical interviews and efficient coding.</p>
+            </section>
+
+            <section class="course-item">
+                <h3><a href="ml-course.html">Introduction to Machine Learning</a></h3>
+                <p>This course introduces the fundamentals of machine learning, including supervised and unsupervised learning techniques. You will explore real-world applications and learn how to implement basic machine learning models using Python libraries such as scikit-learn.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
